@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13106A54-CA9F-4887-A7DB-02D6555BF4F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KLINIK_OTOMASYONU</RootNamespace>
+    <AssemblyName>KLINIK OTOMASYONU</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Doktorlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktorlar.Designer.cs">
+      <DependentUpon>Doktorlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorlarMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorlarMuayene.Designer.cs">
+      <DependentUpon>DoktorlarMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuayeneGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuayeneGüncelle.Designer.cs">
+      <DependentUpon>MuayeneGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Muayene Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muayene Ekle.Designer.cs">
+      <DependentUpon>Muayene Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıtları Görüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıtları Görüntüle.Designer.cs">
+      <DependentUpon>Kayıtları Görüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş Ekranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş Ekranı.Designer.cs">
+      <DependentUpon>Giriş Ekranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İşlem Seçim Ekranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İşlem Seçim Ekranı.Designer.cs">
+      <DependentUpon>İşlem Seçim Ekranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta Kayıt.Designer.cs">
+      <DependentUpon>Hasta Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Doktorlar.resx">
+      <DependentUpon>Doktorlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorlarMuayene.resx">
+      <DependentUpon>DoktorlarMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuayeneGüncelle.resx">
+      <DependentUpon>MuayeneGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıtları Görüntüle.resx">
+      <DependentUpon>Kayıtları Görüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş Ekranı.resx">
+      <DependentUpon>Giriş Ekranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta Kayıt.resx">
+      <DependentUpon>Hasta Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muayene Ekle.resx">
+      <DependentUpon>Muayene Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İşlem Seçim Ekranı.resx">
+      <DependentUpon>İşlem Seçim Ekranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
